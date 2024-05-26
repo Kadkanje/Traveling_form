@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    background: url(bgimge.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: animateBg s linear infinite;
+}
+@keyframes animatebg{
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+.resistation-box{
+position: relative;
+margin-top: 30px;
+width: 400px;
+height: 600px;
+background:transparent;
+border: 3px solid rgb(110, 248, 196);
+border-radius: 35px 0 35px 0;
+display: flex;
+justify-content: center;
+align-items: center;
+backdrop-filter: blur(5px);
+
+}
+/* label{
+    color: aliceblue;
+} */
+
+h2{
+    font-size: 2em;
+    color: aliceblue;
+    text-align: center;
+
+}
+
+.input-box{
+position: relative;
+width: 310px;
+margin: 30px;
+border-bottom: 2px solid aliceblue;
+}
+.input-box label{
+    position: absolute;
+    top: 30%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: aliceblue;
+    pointer-events: none;
+    /* transition: .5s; */
+}
+/* .input-box input:focus~label,
+.input-box input:valid~label{
+    top: -5px;
+} */
+
+.input-box input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: aliceblue;
+    padding: 0 35px 0 5px;
+}
+
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+    color: aliceblue;
+    font-size: 1.2em;
+    line-height: 10px;
+   
+
+}
+.rem-forgot{
+    margin: -15px 0  15px;
+    font-size: .9em;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px
+    
+}
+.rem-forgot label input{
+    margin-right: 5px;
+}
+.rem-forgot a{
+    color: aliceblue;
+    text-decoration: none;
+
+}
+.rem-forgot a:hover{
+    text-decoration: underline;
+}
+button{
+    width: 100%;
+    height: 40px;
+    background: aliceblue;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: black;
+    font-weight: 500;
+}
+.resistation-link{
+    font-size: 1em;
+    color: white;
+    text-align: center;
+    margin: 25px 0 10px ;
+}
+.resistation-link p a :hover{
+text-decoration: underline;
+}
+
+
+@media(max-width:350px){
+    .resistation-box{
+        width: 100%;
+        height: 100vh;
+        border: none;
+        border-radius: 0;
+    }
+    .input-box{
+        width: 290px;
+    }
+}
